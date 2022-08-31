@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/code-Allahtosin/Advice-generatop-app](https://github.com/code-Allahtosin/Advice-generatop-app)
-- Live Site URL: [https://code-allahtosin.github.io/Advice-generatop-app](https://code-allahtosin.github.io/Advice-generatop-app)
+- Solution URL: [https://github.com/code-Allahtosin/Advice-generator-app](https://github.com/code-Allahtosin/Advice-generatop-app)
+- Live Site URL: [https://code-allahtosin.github.io/Advice-generator-app](https://code-allahtosin.github.io/Advice-generatop-app)
 
 
 ## Author
