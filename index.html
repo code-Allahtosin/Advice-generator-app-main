@@ -5,24 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="./index.css">
+
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js' defer> </script>
+  <script src="index.js" defer>  </script>
+
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <div class="body">
+    
+    <div class="advice-container">
+      <div class="advice-number"><p>Advice # <span id="advice-number">112<!-- Advice ID goes here --></span></p></div>
 
-  "<!-- Advice text goes here -->"
-  
+      <div class="advice-text">
+        <p>"<span id="advice-text"><!-- Advice text goes here -->
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget augue 
+          leo. Fusce porttitor ante at metus blandit rhoncus. Vivamus tempus euismod elit
+          vitae f inibus. Nulla eget tristique ligula, id rhoncus um scelerisque. In.
+        </span>"</p>
+      </div>
+      <div class="divider-img">
+        <picture >
+          <source media="(max-width:599px)" srcset="./images/pattern-divider-mobile.svg">
+          <img id="" alt="" src="./images/pattern-divider-desktop.svg" alt="">
+        </picture>
+      </div>
+
+
+      <div class="button-div"><button title="another advice" type="button"><img src="./images/icon-dice.svg" alt=""></button></div>
+
+    </div>
+   
+
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/code-Allahtosin" target="_blank"  rel="noopener noreferrer">Muhammad A</a>.
   </div>
+
 </body>
 </html>
