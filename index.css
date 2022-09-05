@@ -169,8 +169,19 @@ button>img{
     top: 50%;
     left:50%;
     transform: translate(-50% , -50%);
-
 }
+button:hover{
+    animation-name: roll;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes roll{
+  0%{  transform:   translate(-50% , -50%) rotate(0deg)}   
+ 100% { transform:  translate(-50% , -50%) rotate(180deg)}
+}
+
 
 
 .attribution { 
@@ -314,9 +325,8 @@ button>img{
     
     }button:hover, button:focus-visible {         
         box-shadow: 0px 0px 40px 1px var(--Neon-Green);
-        cursor: pointer
+        cursor: pointer; 
     }
-    
     button>img{
         position: absolute;
         top: 50%;
