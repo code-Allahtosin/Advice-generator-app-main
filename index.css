@@ -185,16 +185,18 @@ button>img{
 
 @media only screen and (max-width: 600px) {
     body{
+        padding: 10px 0px;
         font-family: 'Manrope', sans-serif;
         color:var(--Light-Cyan);
         background: var(--Dark-Blue);
         display: absolute;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(100px, auto) auto;
         gap:20px;
         justify-content: space-between;
         min-height: 100vh;
-        height: 100%;
+
     
     }
     div{
@@ -211,6 +213,7 @@ button>img{
         width: 100%;
         min-height:400px;
         height:auto;
+        grid-row: 1/2;
         flex-grow: 1;
     }
     .body-container{
@@ -324,11 +327,14 @@ button>img{
     
     
     .attribution { 
+        grid-row: 2/-1;
+
         font-size: 0.7rem; text-align: center;
          position: relative; bottom:10px;
           left: 50%; transform: translateX(-50%); 
           box-sizing: border-box; height: 15px;
           margin-top: 17px;
+          z-index: -1;
         }
     .attribution a { color: var(--Neon-Green); }
 }
