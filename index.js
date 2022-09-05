@@ -11,8 +11,8 @@ async function fetchAdvice() {
     try {   
            let response= await fetch("https://api.adviceslip.com/advice")
             let data = await response.json()
-            id.textContent = await data.slip.id
-            advice.textContent= await data.slip.advice
+            id.textContent =  data.slip.id
+            advice.textContent=  data.slip.advice
             return
         }  catch (error) {
              console.log(error)

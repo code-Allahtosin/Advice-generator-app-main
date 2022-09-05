@@ -26,12 +26,15 @@
 :root{
     --Light-Cyan:           hsl(193, 38%, 86%);
     --Neon-Green:           hsl(150, 100%, 66%);
+    --Neon-Green-outline:   hsla(150, 100%, 78%, 0.9);
+
     --Grayish-Blue:         hsl(217, 19%, 38%);
     --Dark-Grayish-Blue:    hsl(217, 19%, 24%);
     --Dark-Blue:            hsl(218, 23%, 16%);
 
 }
 
+@media only screen and (min-width: 600px) {
 
 body{
     font-family: 'Manrope', sans-serif;
@@ -53,7 +56,7 @@ div{
     box-sizing: border-box;
 
 }
-
+*:focus-visible{ outline: 1.5px solid var(--Neon-Green-outline);padding: 1px; }
 .body{
     position: relative;
     display: block;
@@ -156,7 +159,7 @@ button{
     transform: translate(-50% , -50%);
     border: none;
 
-}button:hover{
+}button:hover, button:focus-visible {         
     box-shadow: 0px 0px 40px 1px var(--Neon-Green);
     cursor: pointer
 }
@@ -177,3 +180,155 @@ button>img{
       box-sizing: border-box; height: 15px;
     }
 .attribution a { color: var(--Neon-Green); }
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-family: 'Manrope', sans-serif;
+        color:var(--Light-Cyan);
+        background: var(--Dark-Blue);
+        display: absolute;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        justify-content: space-between;
+        min-height: 100vh;
+        height: 100%;
+    
+    }
+    div{
+        position:relative;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    
+    }
+    *:focus-visible{ outline: 1.5px solid var(--Neon-Green-outline);padding: 1px; }
+    .body{
+        position: relative;
+        display: block;
+        width: 100%;
+        min-height:400px;
+        height:auto;
+        flex-grow: 1;
+    }
+    .body-container{
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        padding: 20px;
+    }
+    p{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+    .advice-container{
+        position: absolute;
+        min-width: 250px;
+        width:75%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background: var(--Dark-Grayish-Blue);
+        min-height:10px;
+        height: auto;
+        padding: 20px;
+        border-radius: 15px;
+    
+    
+    }
+    
+    .advice-number{
+    color: var(--Neon-Green);
+    letter-spacing: 0.25em;
+    font-size: 18px;
+    text-align: center;
+    }
+    
+    .advice-text{
+        letter-spacing: 0.15em;
+        line-height: 1.5em;
+        font-size: 28px;
+        font-weight: 800;
+        text-align: center;
+        
+    }
+    
+    .divider-img{
+        width: 100%;
+        height:20px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 30px 0px 60px;
+    
+    }
+    
+    .divider-img picture {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px;
+    
+    
+    }
+    
+    .divider-img img {
+        position: absolute;
+        width:100%;
+        object-fit: contain;
+    
+        box-sizing: border-box;
+    
+    
+    
+    }
+    
+    .button-div{
+        position: relative;
+        margin-bottom: -65px;
+        height: 50px;
+        width: 100%;
+        top: 50%;
+        /* border: 1px dashed red; */
+    
+    
+    }
+    
+    button{
+        display: inline-block;
+        position:absolute; 
+        height: 70px;
+        width: 70px;
+        background: var(--Neon-Green);
+        border-radius: 50%;
+        bottom:-50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        border: none;
+    
+    }button:hover, button:focus-visible {         
+        box-shadow: 0px 0px 40px 1px var(--Neon-Green);
+        cursor: pointer
+    }
+    
+    button>img{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50% , -50%);
+    
+    }
+    
+    
+    .attribution { 
+        font-size: 0.7rem; text-align: center;
+         position: relative; bottom:10px;
+          left: 50%; transform: translateX(-50%); 
+          box-sizing: border-box; height: 15px;
+          margin-top: 17px;
+        }
+    .attribution a { color: var(--Neon-Green); }
+}
